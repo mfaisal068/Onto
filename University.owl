@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/muhammad.faisal/ontologies/2017/9/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/muhammad.faisal/ontologies/2017/9/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:university="https://github.com/mfaisal068/Onto/university.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/mfaisal068/Onto/university.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Studies -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#Studies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Student"/>
+        <rdfs:range rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Teaches -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#Teaches">
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Teacher"/>
+        <rdfs:range rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Last_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#Last_name">
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#StaffID -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#StaffID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Teacher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#StudentID -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#StudentID">
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/mfaisal068/Onto/university.owl#first_name">
+        <rdfs:domain rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#CSModule -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#CSModule">
+        <rdfs:subClassOf rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#MathsModule -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#MathsModule">
+        <rdfs:subClassOf rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Module -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#Module"/>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Person -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#Person"/>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Student -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#Student">
+        <rdfs:subClassOf rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Teacher -->
+
+    <owl:Class rdf:about="https://github.com/mfaisal068/Onto/university.owl#Teacher">
+        <rdfs:subClassOf rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#CS -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#CS">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#IT -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#IT">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Math -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Math">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#MathsModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#SE -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#SE">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Stat -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Stat">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#MathsModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Student1">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Student"/>
+        <university:Studies rdf:resource="https://github.com/mfaisal068/Onto/university.owl#CS"/>
+        <university:Studies rdf:resource="https://github.com/mfaisal068/Onto/university.owl#SE"/>
+        <university:Last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faisal</university:Last_name>
+        <university:StudentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</university:StudentID>
+        <university:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhammad</university:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Student2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Student2">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Student"/>
+        <university:Studies rdf:resource="https://github.com/mfaisal068/Onto/university.owl#IT"/>
+        <university:Last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ali</university:Last_name>
+        <university:StudentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</university:StudentID>
+        <university:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gohar</university:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Student3 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Student3">
+        <university:Studies rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Math"/>
+        <university:Studies rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Stat"/>
+        <university:StudentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</university:StudentID>
+        <university:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atif</university:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Teacher1 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Teacher1">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Teacher"/>
+        <university:Teaches rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Math"/>
+        <university:Teaches rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Stat"/>
+        <university:Last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manzor</university:Last_name>
+        <university:StaffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</university:StaffID>
+        <university:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azhar</university:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/mfaisal068/Onto/university.owl#Teacher2 -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/mfaisal068/Onto/university.owl#Teacher2">
+        <rdf:type rdf:resource="https://github.com/mfaisal068/Onto/university.owl#Teacher"/>
+        <university:Teaches rdf:resource="https://github.com/mfaisal068/Onto/university.owl#CS"/>
+        <university:Teaches rdf:resource="https://github.com/mfaisal068/Onto/university.owl#IT"/>
+        <university:Teaches rdf:resource="https://github.com/mfaisal068/Onto/university.owl#SE"/>
+        <university:StaffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</university:StaffID>
+        <university:first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waqar</university:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/mfaisal068/Onto/university.owl#CSModule"/>
+            <rdf:Description rdf:about="https://github.com/mfaisal068/Onto/university.owl#MathsModule"/>
+            <rdf:Description rdf:about="https://github.com/mfaisal068/Onto/university.owl#Student"/>
+            <rdf:Description rdf:about="https://github.com/mfaisal068/Onto/university.owl#Teacher"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
